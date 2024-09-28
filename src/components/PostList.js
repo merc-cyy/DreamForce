@@ -24,7 +24,8 @@ const PostList = ({ posts }) => {
               {expandedPosts[index] ? '▲' : '▼'}
             </button>
           </div>
-          <p > Project Goal: {post.shortDesc}</p>
+          <p style={styles.goal}> Project Goal:</p>
+          <p style={styles.goa}>{post.shortDesc}</p>
           {expandedPosts[index] && <p>{post.longDesc}</p>}
         </div>
       ))}
@@ -36,6 +37,9 @@ const styles = {
   postList: {
     flex: 1,
     padding: '20px',
+  },
+  goal:{
+    color: '#6a1b9a'
   },
   post: {
     padding: '20px',

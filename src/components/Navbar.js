@@ -5,7 +5,7 @@ const Navbar = ({ onCreate }) => {
     <div style={styles.navbar}>
       <div style={styles.logo}>Dream Force</div>
       <input type="text" placeholder="Search projects..." style={styles.searchBar} />
-      <button style={styles.createButton} onClick={onCreate}>Create</button>
+      <button style={styles.createButton} onClick={onCreate}>Create a Project</button>
     </div>
   );
 };
@@ -32,7 +32,7 @@ const styles = {
     border: '1px solid #ccc',
   },
   createButton: {
-    padding: '16px 16px',
+    padding: '12px 12px',
     backgroundColor: '#fff',
     color: 'black',
     border: 'none',
